@@ -1,7 +1,20 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<TelerikButton ThemeColor="@ThemeConstants.Button.ThemeColor.Primary"
+               OnClick="@SayHelloHandler">Say Hello</TelerikButton>
 
-<h1>Hello, world!</h1>
+<button @onclick="SayHelloHandler">Another click</button>
 
-Welcome to your new app.
+<p>@HelloString</p>
+
+@code {
+    private MarkupString HelloString { get; set; }
+
+    private void SayHelloHandler()
+    {
+        string msg = $"Hello from <strong>Telerik UI for Blazor</strong> at {DateTime.Now.ToString("HH:mm:ss")}!" +
+            "<br /> Now you can use C# to write front-end!";
+
+        HelloString = new MarkupString(msg);
+    }
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Finys-Blazor-Design-System.props" />
+</Project>

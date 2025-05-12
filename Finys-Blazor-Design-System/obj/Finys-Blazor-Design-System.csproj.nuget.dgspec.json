@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ratnam_a\\Documents\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj": {}
+    "C:\\Users\\ratnam_a\\Source\\Repos\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ratnam_a\\Documents\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj": {
+    "C:\\Users\\ratnam_a\\Source\\Repos\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ratnam_a\\Documents\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj",
+        "projectUniqueName": "C:\\Users\\ratnam_a\\Source\\Repos\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj",
         "projectName": "Finys-Blazor-Design-System",
-        "projectPath": "C:\\Users\\ratnam_a\\Documents\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj",
+        "projectPath": "C:\\Users\\ratnam_a\\Source\\Repos\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System.csproj",
         "packagesPath": "C:\\Users\\ratnam_a\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ratnam_a\\Documents\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\obj\\",
+        "outputPath": "C:\\Users\\ratnam_a\\Source\\Repos\\Finys-Blazor-Design-System\\Finys-Blazor-Design-System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -29,7 +29,8 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "R:\\FinysCore\\Releases": {},
           "http://fin-integ:8080/Finys/Engineering/_packaging/FT3/nuget/v3/index.json": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -52,6 +53,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Telerik.UI.for.Blazor.Trial": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

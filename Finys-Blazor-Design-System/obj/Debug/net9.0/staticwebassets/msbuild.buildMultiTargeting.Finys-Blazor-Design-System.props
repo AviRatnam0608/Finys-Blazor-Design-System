@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Finys-Blazor-Design-System.props" />
+</Project>
