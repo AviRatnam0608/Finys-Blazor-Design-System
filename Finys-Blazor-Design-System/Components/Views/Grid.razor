@@ -1,0 +1,41 @@
+﻿@using Finys_Blazor_Design_System.Models
+@rendermode InteractiveServer
+
+<PageTitle>Grid</PageTitle>
+
+<h1>Grid</h1>
+
+@* Telerik Blazor Grid with some common features *@
+
+<TelerikGrid Data="@MyGridData"
+             Pageable="true"
+             Sortable="false"
+             FilterMode="@GridFilterMode.None">
+    <GridColumns>
+        <GridColumn Field="Id" />
+        <GridColumn Field="@nameof(GridData.Claimant)" />
+        <GridColumn Field="@nameof(GridData.Adjuster)" />
+    </GridColumns>
+</TelerikGrid>
+
+@code {
+    private List<GridData> MyGridData { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        MyGridData = new List<GridData>();
+
+
+        MyGridData.Add(
+            new()
+            {
+                Id = 1,
+                Claimant = "Claimant",
+                Adjuster = "Adjuster",
+            }
+        );
+
+
+        base.OnInitialized();
+    }
+}

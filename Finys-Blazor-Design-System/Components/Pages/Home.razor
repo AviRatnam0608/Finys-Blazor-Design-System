@@ -2,11 +2,13 @@
 @rendermode InteractiveServer
 
 <TelerikButton ThemeColor="@ThemeConstants.Button.ThemeColor.Primary"
-OnClick="@SayHelloHandler">Say Hello</TelerikButton>
+               OnClick="@SayHelloHandler">Say Hello</TelerikButton>
 
 <button @onclick="SayHelloHandler">Another click</button>
 
 <p>@HelloString</p>
+
+<Grid />
 
 @code {
     private string? HelloString = "";
